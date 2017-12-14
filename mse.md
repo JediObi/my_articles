@@ -24,7 +24,7 @@ $$Var(C) = E(C-E(C))^2=E(C-C)^2=E(0)^2=0$$
 $$y=f(x) + \epsilon$$
 
 $$\hat y= \hat f(x)$$
-$$E(y-\hat y)^2=E(y^2-2y\hat y+\hat y^2)=E(y^2)-E(2y\hat y)+E(\hat y^2)
+$$MSE=E(y-\hat y)^2=E(y^2-2y\hat y+\hat y^2)=E(y^2)-E(2y\hat y)+E(\hat y^2)
 $$
 $$=E\{[f(x)+\epsilon]^2\}-2E(y)E(\hat y)+E\{\hat f(x)^2\}$$ (2)
 $$$$
@@ -37,7 +37,7 @@ $$=2f(x)E\{\hat f(x)\}$$
 $$$$
 $$E\{\hat f(x)^2\}=Var\{\hat f(x)\}+\{E[f(x)]\}^2$$
 $$$$
-$$(2)=\epsilon^2+\{f(x)\}^2-2f(x)E\{\hat f(x)\}+\{E[f(x)]\}^2+Var\{\hat f(x)\}$$
+$$MSE=\epsilon^2+\{f(x)\}^2-2f(x)E\{\hat f(x)\}+\{E[f(x)]\}^2+Var\{\hat f(x)\}$$
 $$=\epsilon^2+\{f(x)-E[\hat f(x)]\}^2+Var\{\hat f(x)\}$$
 
 所以每次训练的模型对一个样本预测的误差构成有三部分：
